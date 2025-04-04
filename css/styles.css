@@ -11,32 +11,35 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #2A3D45;
     margin: 0;
     padding: 0;
     height: 15vh;
     width: 100%;
     min-height: 125px;
+    overflow: visible;
 }
 
 h1#titleHeader {
+    padding: 0;
+    margin: 0;
     font-weight: bold;
     margin-left: 5%;
-    font-size: 3em;
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    max-width: 100%;
     color: white;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
 
 /* Header navigation styles */
 nav#headerNav {
     display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap;
     overflow: hidden;
     margin-right: 5%;
-    width: 40%;
-    min-width: 500px;
-    justify-content: center;
+    width: fit-content;
+    justify-content: flex-end;
 }
 
 nav#headerNav ul {
@@ -68,23 +71,41 @@ a.navLink:hover {
 
 
 /* Desktop styles */
-@media screen and (min-width: 1001px) {
-    img#hamburgerButton {
-        display: none;
-    }
+a#navIcon img {
+    display: none;
 }
 
 /* Mobile styles */
 @media screen and (max-width: 1000px) {
-    img#hamburgerButton {
+    a#navIcon img {
         display: inline-block;
-        width: 40px;
+        padding: 0;
+        margin-right: 5%;
+        width: 55px;
+    }
+
+    a#navIcon {
         margin-right: 5%;
     }
 
     nav#headerNav {
         display: none;
     }
+
+    a#navIcon:hover+nav, nav#headerNav:hover {
+        display: block;
+        position: absolute;
+        top: max(15vh, 125px);
+        width: 100%;
+        margin: 0%;
+        background-color: #42BFDD;
+        z-index: 2;
+    }
+
+    a#navIcon:hover+nav ul, nav#headerNav:hover ul{
+        flex-direction: column;
+    }
+    
 }
 
 /* Main content styles */
@@ -120,11 +141,11 @@ div#column2 {
     }
 
     div#column1 {
-        width: 100%;
+        width: 90%;
     }
 
     div#column2 {
-        width: 100%;
+        width: 90%;
     }    
 }
 
@@ -151,6 +172,7 @@ img#sideBarPhoto {
 
 /* Footer styles */
 footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,24 +191,23 @@ nav#footerNav {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
-    min-width: 400px;
+    width: 90%;
+    align-items: center;
     justify-content: center;
-    gap: 8px;
-    grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+    max-width: 600px;
 }
 
-/*
 nav#footerNav ul {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0;
     padding: 0;
-    gap: 10px;
+    margin: 0;
 }
 
 nav#footerNav li {
-    flex: 1 1 auto;
-    white-space: nowrap;
-}*/
+    margin: auto;
+}
