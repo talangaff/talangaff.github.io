@@ -1,0 +1,11 @@
+#wildfireFigure {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+#wildfireFigure > img {
+    width: 100%;
+}
+
+figure > figcaption {
+    text-align: center;
+}
