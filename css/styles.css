@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Header styles */
 header {
     display: flex;
