@@ -1,0 +1,36 @@
+section#mainContent {
+    display: block;
+    margin: 4%;
+    width: 90%;
+    min-height: 475px;
+}
+
+section#interestImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+section#interestImages > figure {
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+section#interestImages > figure > img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+section#interestImages > figure > figcaption::first-line {
+    font-weight: bold;
+}
+
+section#interestImages > figure > figcaption {
+    text-align: center;
+    max-width: 200px;
+}
+
+footer {
+    margin-top: ;
+}
