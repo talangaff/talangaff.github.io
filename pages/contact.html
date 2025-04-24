@@ -8,6 +8,8 @@
 
         <link rel="stylesheet" href="../css/w3.css" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/contact.css" />
+        <script src="../js/contact.js" defer></script>
     </head>
 
     <body>
@@ -25,10 +27,32 @@
             </nav>
         </header>
         <section id="mainContent">
-            <div id="column1">
-                <h1>Contact Me</h1>
-                <p>Coming Soon.</p>
-            </div>
+            <form id="contactMe">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" name="firstName" type="text" pattern="^.{2,}$" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" name="lastName" type="text" pattern="^.{2,}$" required>
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject" type="text" pattern="^.{2,}$" required>
+                        </div>
+                        <div>
+                            <label for="body">Body</label>
+                            <textarea id="body" name="body" pattern="^.{2,}$" required></textarea>
+                        </div>
+                        <div>
+                            <button id="contactSubmit" onclick="openMail()">Submit</button>
+                            <input type="reset" />
+                        </div>
+                    </fieldset>
+                </form>
         </section>
         <footer>
             <nav id="footerNav">

@@ -1,0 +1,61 @@
+section#mainContent {
+    min-height: 550px;
+}
+
+#contactMe {
+    width: 90%;
+    margin-top: 1em;
+}
+
+#contactMe legend {
+    font-size: 2em;
+}
+
+#contactMe > fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+#contactMe > fieldset > div > label {
+    text-align: left;
+    margin-top: 1em;
+}
+
+#contactMe > fieldset > div > :is(input:not([type="reset"]), textarea) {
+    width: 100%;
+    margin: auto;
+}
+
+#contactMe > fieldset > div:nth-of-type(5) > :is(button, input) {
+    width: 40%;
+}
+
+#contactMe > fieldset > div {
+    width: 50%;
+}
+
+#contactMe > fieldset > :is(div:not(:nth-of-type(5))) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: center;
+}
+
+#contactMe > fieldset button {
+    margin-top: 2em;
+}
+
+#contactMe > fieldset :is(input:not([type="reset"]), textarea, label) {
+    display: block;
+}
+
+
+#contactMe > fieldset :is(input, textarea):focus:valid {
+    background-color: lightgreen;
+}
+
+#contactMe > fieldset :is(input, textarea):focus:invalid {
+    background-color: lightpink;
+}
