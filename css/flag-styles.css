@@ -1,0 +1,20 @@
+main {
+    width: 95vw;
+    margin: 20px auto;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#home-button {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+header {
+    height: 25vh;
+}
+
+#title {
+    color: white;
+}
+
+#flag-container * {
+    text-align: center;
+}
+
+#flag-container > div {
+    width: 26%;
+    min-width: 200px;
+    border: blue 2px solid;
+    border-radius: 10px;
+}
+
+.flag-number {
+    border-bottom: blue 2px solid;
+}
+
+.easy {
+    color: rgb(150,220,150);
+}
+
+.medium {
+    color: rgb(240,240,0);
+}
+
+.hard {
+    color: rgb(255,50,50);
+}
+
+.flag-button {
+    color: white;
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
