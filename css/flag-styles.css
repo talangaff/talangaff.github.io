@@ -9,7 +9,7 @@ main {
     padding: 10px;
 }
 
-#home-button {
+#home-button, #next-flag, #previous-flag {
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
@@ -17,4 +17,12 @@ main {
     display: block;
     width: fit-content;
     margin-bottom: 10px;
+}
+
+#next-flag, #previous-flag {
+    display: inline-block;
+}
+
+#download-button {
+    margin-bottom: 30px;
 }

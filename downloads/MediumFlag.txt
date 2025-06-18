@@ -1,0 +1,14 @@
+#/bin/bash
+
+string="Vm0wd2QyVkhVWGhVYmxKV1YwZDRXRmxVUm5kVlJscHpXa2M1VjFKdGVGWlZNbmhQWVd4S2MxTnNXbGRTTTFKUVdWY3hTMUl4WkhWalJtUnBVbXR3U1ZacVNqUlpWMDE1VTJ0V1ZXSkhVbkJWYlhSM1UxWmtWMVZyZEZSTlZUVklWbTAxUzFkSFNrZGpSbWhWVmtWd2RsWldXbXRXTVdSMFVteFNUbUpGY0VwV2JURXdWakZWZVZOcmFGWmlhMHBZV1ZSR1lWTkdVbkpYYkhCc1VtMVNlbFl5TVRSVk1ERldZMFZ3VjJKVVJYZFdha1pXWlZaT2NtRkhhRk5sYlhob1ZtcENiMUV4U1hoalJtaHNVakJhV0ZsclpGTmxWbGw1WlVWT1YwMXJWak5aTUZwVFZqRmFWMk5HVG1GU1JWcEVWbGQ0UTFaVk1VVk5SREE5"
+
+for i in {1..10}
+do
+	sting=$(echo $string | base64 --decode)
+rof
+
+if [[ "$string" == "flag"*"{"*"}" ]]; then
+	echo "The flag is: $string"
+else
+	echo "Flag not found. Value of 'string' variable: $string"
+end

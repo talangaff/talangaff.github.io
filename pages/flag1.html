@@ -12,6 +12,9 @@
 
         <!--Styles-->
         <link rel="stylesheet" href="../css/flag-styles.css">
+
+        <!--JS-->
+        <script src="../js/flags.js" defer></script>
     </head>
 
     <body>
@@ -24,6 +27,15 @@
             
             <div id="flag-content">
                 <h1>Flag 1</h1>
+                <p>We have found an encrypted string during our penetration testing. Decrypt it to find the flag:<br><strong>Ec4uB45AFmcClBkIoBhwuke30aT</strong></p>
+            </div>
+
+            <div id="submit-flag">
+                <label for="flag-input">Enter Flag</label>
+                <input type="text" id="flag-input" placeholder="flag{******_********}">
+                <button type="button" id="submit-flag-button">Submit Flag</button>
+                <strong><p id="submit-message"></p></strong>
+                <a href="flag2.html"><button type="button" id="next-flag" class="bg-primary">Next Flag</button></a>
             </div>
         </main>
     </body>

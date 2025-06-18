@@ -12,6 +12,9 @@
 
         <!--Styles-->
         <link rel="stylesheet" href="../css/flag-styles.css">
+
+        <!--JS-->
+        <script src="../js/flags.js" defer></script>
     </head>
 
     <body>
@@ -24,6 +27,17 @@
             
             <div id="flag-content">
                 <h1>Flag 2</h1>
+                <p>A program was found in our penetration testing, but it contains some errors. Figure out what language it is written in, change the file extension, and debug it to find the flag.</p>
+                <a href="../downloads/MediumFlag.txt" download><button type="button" id="download-button">Download File</button></a>
+            </div>
+
+            <div id="submit-flag">
+                <label for="flag-input">Enter Flag</label>
+                <input type="text" id="flag-input" placeholder="flag{****_*********}">
+                <button type="button" id="submit-flag-button">Submit Flag</button>
+                <strong><p id="submit-message"></p></strong>
+                <a href="flag1.html"><button type="button" id="previous-flag" class="bg-primary">Previous Flag</button></a>
+                <a href="flag3.html"><button type="button" id="next-flag" class="bg-primary">Next Flag</button></a>
             </div>
         </main>
     </body>
