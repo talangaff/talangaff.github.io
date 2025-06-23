@@ -5,7 +5,7 @@ const submitMessage = document.getElementById("submit-message");
 submitFlagButton.addEventListener("click", submitFlag);
 
 const flagArray = [
-    "flag{Base62_Decoded}",
+    "flag{Base58_Decoded}",
     "flag{Bash_Debugging}",
     "flag{Brute_Force_Attack}"
 ]
